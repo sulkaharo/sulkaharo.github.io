@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Care Portal Pebble Settings</title> 
+		<title>OAPS Care Portal Pebble Settings</title> 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
@@ -23,6 +23,12 @@
 	                    $('#hashAPI').val(Sha1.hash($('#secretAPI').val()));
     	                });
 	            });
+	            
+	            Pebble.addEventListener("ready", function(e) {
+				    "use strict";
+   					 console.log("Pebble JS ready");
+				});
+	            
 	        </script>
 	</head>
 	<body>
